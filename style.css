@@ -1,159 +1,183 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1rem;
 }
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100&family=Beau+Rivage&family=Bebas+Neue&family=Festive&family=Grape+Nuts&family=Montserrat:wght@400;900&family=Ms+Madi&family=Nunito&family=Nunito+Sans&family=Open+Sans:wght@400;500;600&family=Oswald:wght@200;700&family=Poppins:wght@300;500&family=Quintessential&family=Roboto+Condensed:wght@400;700&family=RocknRoll+One&family=Smooch+Sans:wght@200&family=Spectral:wght@700&family=Updock&family=Vollkorn:wght@500&family=Water+Brush&display=swap");
 
 body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(243, 243, 243);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  background-color: rgb(239, 239, 239);
 }
 
-.instagram-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 60%;
-    height: 100vh;
-}
-
-.instagram-phone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-
-.instagram-phone img {
-    height: 50rem;
-}
-
-.instagram-continue {
-    display: flex;
-    align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
-    flex-direction: column;
-    width: 50%;
-    min-height: 34rem;
+main {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1900px;
 }
 
 .group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fig-cel {
+  width: 700px;
+  height: 610px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  height: 280px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid rgba(160, 159, 159, 0.5);
+  box-shadow: 0px 0px 10px 0px gainsboro;
+}
+
+h1 {
+  font-family: "Updock", cursive;
+  font-size: 2rem;
+}
+
+.fig-perfil img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+button {
+  background-color: rgb(6, 156, 243);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.contain {
+  margin-top: 0.8rem;
+  padding: 20px;
+  width: 500px;
+  background-color: white;
+  border: 1px solid rgba(160, 159, 159, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px gainsboro;
+}
+
+.contain nav {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contain p {
+  color: gray;
+}
+
+.contain nav p {
+  color: gray;
+}
+
+a {
+  color: rgb(6, 156, 243);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+h4 {
+  color: rgb(72, 71, 71);
+  font-weight: bolder;
+}
+
+.box-download {
+  padding: 20px;
+  width: 500px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box-download figure {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box-download figure img {
+  width: 150px;
+}
+
+@media (max-width: 1240px) {
+  .contain,
+  .box-download,
+  .container {
+    width: 500px;
+    margin-right: 100px;
+  }
+
+  .group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 915px) {
+  .fig-cel {
+    display: none;
+  }
+
+  .contain,
+  .box-download,
+  .container {
+    margin-right: 0px;
+  }
+
+  .box {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contain,
+  .box-download,
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 348px) {
+  .box-download {
+    height: 200px;
+  }
+
+  .box-download figure {
     flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 1.3rem 0;
-    border: 1px solid lightgray;
-}
-
-.group:nth-child(1) {
-    min-height: 19rem;
-}
-
-.instagram-logo {
-    height: 3rem;
-}
-
-.profile-photo {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-photo img {
-    height: 6rem;
-}
-
-.instagram-login {
-    background-color: #0095f6;
-    color: #ffffff;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.instagram-logout {
-    color: #0095f6;
-    margin-top: 1rem;
-}
-
-.not-account {
-    color: rgb(160, 160, 160);
-}
-
-.link-blue {
-    color: #0095f6;
-}
-
-.get-the-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1.3rem 0;
-}
-
-.download {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem;
-}
-
-.app-download {
-    height: 3rem;
-    width: 10rem;
-    background-size: cover;
-}
-
-.app-download:nth-child(1) {
-    background-image: url('./img/apple-button.png');
-}
-
-.app-download:nth-child(2) {
-    background-image: url('./img/googleplay-button.png');
-}
-
-/* media queries */
-
-
-@media (max-width: 1024px) {
-    .instagram-wrapper {
-        width: 90%;
-    }
-}
-
-@media (max-width: 650px) {
-    body {
-        background-color: #ffffff;
-    }
-
-    .instagram-wrapper {
-        width: 90%;
-    }
-
-    .instagram-phone {
-        display: none;
-    }
-
-    .instagram-continue {
-        width: 100%;
-    }
-    
-    .group {
-        border: 1px solid transparent;
-    }
+    height: 300px;
+  }
 }
